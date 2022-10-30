@@ -1,0 +1,891 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #000;
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .container {
+    width: 100%;
+  }
+  .image-wrapper {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd05b4ed-7e37-4be9-85c8-078f067bd150/IN-en-20221017-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+  }
+  .home {
+    height: 700px;
+    width: 100%;
+    padding: 30px 50px;
+    background-color: rgba(0, 0, 0, 0.603);
+    box-shadow: inset 0 100px 20px 10px rgba(0, 0, 0, 0.527);
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  header nav img {
+    width: 120px;
+    height: 40px;
+  }
+  header nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+  }
+  .login-btn {
+    color: white;
+    background-color: #e50914;
+    padding: 7px 18px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .language-select {
+    color: white;
+    background-color: transparent;
+    padding: 7px 18px;
+    border: 1px solid white;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+  main .wrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .wrapper .content {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10% 20% 0 20%;
+  }
+  main .wrapper .content h1 {
+    font-size: 48px;
+    padding: 0 50px;
+    /* max-width: 700px; */
+  }
+  main .wrapper .content h4 {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  main .wrapper .content h6 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .input {
+    display: flex;
+    height: 60px;
+    padding: 0 10px;
+    width: 750px;
+    max-width: 750px;
+  }
+  .input input {
+    padding: 5px 10px;
+    flex: 3;
+    font-size: 16px;
+    border: none;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+  }
+  .input button {
+    flex: 1;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #e50914;
+    padding: 10px 25px;
+    font-size: 26px;
+    font-weight: 400;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    cursor: pointer;
+  }
+  .input input:focus {
+    border: 1px solid cyan;
+    outline: none;
+  }
+  hr {
+    height: 7px;
+    background-color: rgb(54, 51, 51);
+    border: none;
+    outline: none;
+  }
+  .sec {
+    height: 500px;
+    padding: 5% 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-section-1 {
+    flex: 1;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .right-section-1 {
+    flex: 1;
+    padding: 5px 15px;
+  }
+  .video-1 {
+    position: relative;
+    width: 550px;
+    height: 400px;
+    margin-left: 140px;
+  }
+  .right-section-1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+  }
+  .video-container-1 {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+  }
+  .video-container-1 video {
+    width: 84%;
+  }
+  .right-section-2 {
+    flex: 1;
+    color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .left-section-2 {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .left-section-2 img {
+    width: 520px;
+  }
+  
+  .left-section-3 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .right-section-3 {
+    padding-left: 50px;
+  }
+  .video-3 {
+    position: relative;
+    width: 550px;
+    height: 400px;
+    margin-left: 140px;
+  }
+  .right-section-3 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+  }
+  .video-container-3 {
+    position: absolute;
+    left: 17%;
+    top: 10%;
+  }
+  .video-container-3 video {
+    width: 78%;
+  }
+  .wrapper-faq {
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+  .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+  }
+  .qstn {
+    height: 80px;
+    background-color: #303030;
+    padding: 5px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .faq-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media only screen and (min-width: 1450px) {
+    main .wrapper .content {
+      padding: 7% 20% 10px 20%;
+    }
+    main .wrapper .content h1 {
+      font-size: 66px;
+      font-weight: 500;
+    }
+  
+    .sec {
+      padding: 5% 20%;
+    }
+    .right-section-1 img {
+      width: 95%;
+      position: relative;
+    }
+    .video-container-1 {
+      position: absolute;
+      top: 10%;
+      right: 0%;
+    }
+    .video-container-1 video {
+      width: 85%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .video-1 {
+      position: relative;
+      width: 550px;
+      height: 400px;
+      margin-left: 140px;
+    }
+    .right-section-1 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+    }
+    .video-container-1 {
+      position: absolute;
+      top: 20%;
+      left: 13%;
+    }
+    .video-container-1 video {
+      width: 84%;
+    }
+    .video-3 {
+      position: relative;
+      width: 550px;
+      height: 400px;
+      margin-left: 140px;
+    }
+    .right-section-3 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+    }
+    .video-container-3 {
+      position: absolute;
+      left: 17%;
+      top: 10%;
+    }
+  }
+  @media only screen and (min-width: 950px) {
+    .left-section-1 {
+      min-width: 420px;
+    }
+  
+    .video-1 {
+      position: relative;
+      width: 462px;
+      height: 344px;
+      margin-left: 0;
+    }
+    .left-section-2 img {
+      width: 400px;
+    }
+    .right-section-2 {
+      min-width: 460px;
+    }
+    .right-section-2 h1 {
+      line-height: 48px;
+    }
+    .left-section-3 {
+      min-width: 400px;
+    }
+    .video-3 {
+      margin-left: 0;
+      width: 450px;
+      height: 380px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 949px) {
+    main .wrapper .content {
+      padding: 10% 5% 0 5%;
+    }
+    main .wrapper .content h1 {
+      font-size: 50px;
+      padding: 25px 25px 0 25px;
+      max-width: 700px;
+    }
+    main .wrapper .content h6 {
+      font-size: 26px;
+      font-weight: 400;
+      padding: 0px 40px;
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 0px 20%;
+    }
+    .input input {
+      padding: 20px 10px;
+      width: 450px;
+    }
+    .input button {
+      padding: 10px 12px;
+      width: 147px;
+      font-size: 16px;
+    }
+    .sec {
+      height: 660px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .left-section-1 {
+      text-align: center;
+      gap: 5px;
+    }
+    .left-section-1 h4 {
+      font-size: 20px;
+    }
+    .right-section-1 {
+      padding: 10px 15px;
+    }
+    .video-1 {
+      position: relative;
+      width: 550px;
+      height: 400px;
+      margin: 0;
+    }
+    .right-section-1 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+    }
+    .video-container-1 {
+      position: absolute;
+      top: 20%;
+      left: 13%;
+    }
+    .video-container-1 video {
+      width: 84%;
+    }
+  
+    .section-2 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+    .right-section-2 {
+      gap: 5px;
+    }
+    .right-section-2 h1 {
+      font-size: 38px;
+    }
+    .right-section-2 h4 {
+      font-size: 20px;
+    }
+    .left-section-2 img {
+      width: 560px;
+    }
+    .section-3 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .left-section-3 {
+      gap: 5px;
+    }
+    .left-section-3 h1 {
+      font-size: 38px;
+    }
+    .left-section-3 h4 {
+      font-size: 20px;
+    }
+    .right-section-3 {
+      padding: 0;
+    }
+    .video-3 {
+      position: relative;
+      width: 550px;
+      height: 400px;
+      margin: 0;
+    }
+    .right-section-3 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+    .video-container-3 {
+      position: absolute;
+      left: 6%;
+      top: 10%;
+    }
+    .video-container-3 video {
+      width: 75%;
+    }
+    .wrapper-faq {
+      padding: 75px 60px;
+      margin-bottom: 50px;
+      gap: 15px;
+    }
+  
+    .wrapper-faq h1 {
+      font-size: 38px;
+    }
+    .wrapper-faq h6 {
+      padding: 0 80px;
+      font-size: 26px;
+    }
+    .questions {
+      width: 100%;
+    }
+    .qstn {
+      height: 60px;
+    }
+  
+    .qstn h4 {
+      font-size: 22px;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 767px) {
+    .home {
+      padding: 15px;
+    }
+  
+    header nav img {
+      width: 84px;
+      height: 24px;
+    }
+    header nav ul {
+      gap: 10px;
+    }
+    .image-wrapper {
+      height: 455px;
+    }
+    .language-select,
+    .login-btn {
+      padding: 4px 8px;
+    }
+    main .wrapper .content {
+      padding: 10% 3% 0 3%;
+    }
+    main .wrapper .content h1 {
+      font-size: 28px;
+      padding: 0 5px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+    main .wrapper .content h4 {
+      font-size: 20px;
+    }
+    main .wrapper .content h6 {
+      font-size: 18px;
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 0;
+    }
+    .input input {
+      padding: 15px 10px;
+      width: 350px;
+    }
+    .input button {
+      padding: 10px 12px;
+      width: 147px;
+      font-size: 16px;
+    }
+    .sec {
+      height: 475px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 7% 2%;
+    }
+    .left-section-1 {
+      text-align: center;
+      gap: 5px;
+    }
+    .left-section-1 h1 {
+      font-size: 28px;
+    }
+    .left-section-1 h4 {
+      font-size: 18px;
+    }
+    .right-section-1 {
+      padding: 10px 15px;
+    }
+    .video-1 {
+      position: relative;
+      width: 370px;
+      height: 275px;
+      margin: 0;
+    }
+    .right-section-1 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+    }
+    .video-container-1 {
+      position: absolute;
+      top: 20%;
+      left: 13%;
+    }
+    .video-container-1 video {
+      width: 84%;
+    }
+  
+    .section-2 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+    .right-section-2 {
+      gap: 5px;
+    }
+    .right-section-2 h1 {
+      font-size: 28px;
+    }
+    .right-section-2 h4 {
+      font-size: 18px;
+    }
+    .left-section-2 img {
+      width: 320px;
+    }
+    .section-3 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .left-section-3 {
+      /* gap: 5px; */
+      padding: 2px 5px;
+    }
+    .left-section-3 h1 {
+      font-size: 28px;
+    }
+    .left-section-3 h4 {
+      font-size: 20px;
+    }
+    .right-section-3 {
+      padding: 0;
+    }
+    .video-3 {
+      position: relative;
+      width: 360px;
+      height: 280px;
+      margin: 0;
+    }
+    .right-section-3 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+    .video-container-3 {
+      position: absolute;
+      left: 0%;
+      top: 10%;
+    }
+    .video-container-3 video {
+      width: 65%;
+    }
+    .wrapper-faq {
+      padding: 50px 0;
+      margin-bottom: 50px;
+      gap: 30px;
+    }
+    .faq-input {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .wrapper-faq h1 {
+      font-size: 28px;
+    }
+    .wrapper-faq h6 {
+      padding: 0 40px;
+      font-size: 18px;
+    }
+    .questions {
+      width: 100%;
+    }
+    .qstn {
+      height: 60px;
+    }
+  
+    .qstn h4 {
+      font-size: 22px;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 600px) {
+    .home {
+      padding: 15px;
+    }
+  
+    header nav img {
+      width: 84px;
+      height: 24px;
+    }
+    header nav ul {
+      gap: 10px;
+    }
+    .image-wrapper {
+      height: 455px;
+    }
+    .language-select,
+    .login-btn {
+      padding: 4px 8px;
+    }
+    main .wrapper .content {
+      padding: 10% 3% 0 3%;
+    }
+    main .wrapper .content h1 {
+      font-size: 28px;
+      padding: 0 5px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+    main .wrapper .content h4 {
+      font-size: 20px;
+    }
+    main .wrapper .content h6 {
+      font-size: 18px;
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      width: 0;
+    }
+    .input input {
+      padding: 15px 10px;
+      width: 350px;
+    }
+    .input button {
+      padding: 10px 12px;
+      width: 147px;
+      font-size: 16px;
+    }
+    .sec {
+      height: 475px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 7% 2%;
+    }
+    .left-section-1 {
+      text-align: center;
+      gap: 5px;
+    }
+    .left-section-1 h1 {
+      font-size: 28px;
+    }
+    .left-section-1 h4 {
+      font-size: 18px;
+    }
+    .right-section-1 {
+      padding: 10px 15px;
+    }
+    .video-1 {
+      position: relative;
+      width: 370px;
+      height: 275px;
+      margin: 0;
+    }
+    .right-section-1 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+    }
+    .video-container-1 {
+      position: absolute;
+      top: 20%;
+      left: 13%;
+    }
+    .video-container-1 video {
+      width: 84%;
+    }
+  
+    .section-2 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
+    .right-section-2 {
+      gap: 5px;
+    }
+    .right-section-2 h1 {
+      font-size: 28px;
+    }
+    .right-section-2 h4 {
+      font-size: 18px;
+    }
+    .left-section-2 img {
+      width: 320px;
+    }
+    .section-3 {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .left-section-3 {
+      /* gap: 5px; */
+      padding: 2px 5px;
+    }
+    .left-section-3 h1 {
+      font-size: 28px;
+    }
+    .left-section-3 h4 {
+      font-size: 20px;
+    }
+    .right-section-3 {
+      padding: 0;
+    }
+    .video-3 {
+      position: relative;
+      width: 360px;
+      height: 280px;
+      margin: 0;
+    }
+    .right-section-3 img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      top: 0;
+      left: 0;
+    }
+    .video-container-3 {
+      position: absolute;
+      left: 0%;
+      top: 10%;
+    }
+    .video-container-3 video {
+      width: 65%;
+    }
+    .wrapper-faq {
+      padding: 50px 0;
+      margin-bottom: 50px;
+      gap: 30px;
+    }
+    .faq-input {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+    }
+  
+    .wrapper-faq h1 {
+      font-size: 28px;
+    }
+    .wrapper-faq h6 {
+      padding: 0 40px;
+      font-size: 18px;
+    }
+    .questions {
+      width: 100%;
+    }
+    .qstn {
+      height: 60px;
+    }
+  
+    .qstn h4 {
+      font-size: 22px;
+    }
+  }
+  /* @media only screen and (min-width: 550px) {
+    main .wrapper .content {
+      padding: 5% 0;
+    }
+  } */
+  
+  @media only screen and (max-width: 600px) {
+  }
+  
